@@ -18,6 +18,9 @@ Pod::Spec.new do |s|
   s.preserve_paths = "Applovin/libAppLovinSdk.a"
   s.frameworks = "AdSupport", "AVFoundation", "CoreTelephony", "CoreGraphics", "CoreMedia", "MediaPlayer", "SystemConfiguration", "UIKit"
 
-  s.header_mappings_dir = "Applovin"
+  s.libraries = "AppLovinSdk"
+  s.xcconfig = {
+    :LIBRARY_SEARCH_PATHS => "$(PODS_ROOT)/AppLovin/"
+  }
   
 end
