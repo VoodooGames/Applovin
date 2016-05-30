@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.libraries = "AppLovinSdk"
   s.xcconfig = {
-    :LIBRARY_SEARCH_PATHS => "$(PODS_ROOT)/AppLovin/"
+    :LIBRARY_SEARCH_PATHS => "$(PODS_ROOT)/AppLovin/Applovin"
   }
   
 end
