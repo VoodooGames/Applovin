@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/VoodooGames/Applovin.git", :branch => "master" }
   s.frameworks = "AdSupport", "AVFoundation", "CoreTelephony", "CoreGraphics", "CoreMedia", "MediaPlayer", "SystemConfiguration", "UIKit"
 
+  s.source_files = 'Applovin/headers/*.h'
   s.preserve_paths = 'Applovin/headers/*.h'
   s.vendored_libraries = 'Applovin/libAppLovinSdk.a'
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => "$(PODS_ROOT)/AppLovin/Applovin/**" }
